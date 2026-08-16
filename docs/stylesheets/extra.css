@@ -8,10 +8,10 @@
   /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
   --md-default-bg-color: #faf9f5 !important;
   --md-default-fg-color: #141413 !important;
-  --md-default-fg-color--light: #6b665e;
-  --md-default-fg-color--lighter: #a39d92;
-  --md-primary-fg-color: #faf9f5;
-  --md-primary-bg-color: #141413;
+  --md-default-fg-color--light: #6b665e !important;
+  --md-default-fg-color--lighter: #a39d92 !important;
+  --md-primary-fg-color: #faf9f5 !important;
+  --md-primary-bg-color: #141413 !important;
 
   --admonition-bg: #f2ede2;
   --admonition-border: #ded7c9;
@@ -19,11 +19,11 @@
   --highlight-fg: inherit;
   --link-color: #8f7c4d;
   --link-color-hover: #ad9868;
-  --md-typeset-a-color: var(--link-color);
-  --md-accent-fg-color: var(--link-color-hover);
-  --md-accent-fg-color--transparent: rgba(143, 124, 77, 0.1);
-  --md-accent-bg-color: #141413;
-  --md-accent-bg-color--light: #141413;
+  --md-typeset-a-color: var(--link-color) !important;
+  --md-accent-fg-color: var(--link-color-hover) !important;
+  --md-accent-fg-color--transparent: rgba(143, 124, 77, 0.1) !important;
+  --md-accent-bg-color: #141413 !important;
+  --md-accent-bg-color--light: #141413 !important;
 }
 
 /* ---- тёмная тема: те же роли, тёплая тёмная палитра ---- */
@@ -32,21 +32,21 @@
   /* фон — как в тёмной теме Клода: hsl(0, 0%, 8.24%) */
   --md-default-bg-color: #151515 !important;
   --md-default-fg-color: #e9e4d8 !important;
-  --md-default-fg-color--light: #b0aa9b;
-  --md-default-fg-color--lighter: #6e6a5e;
-  --md-primary-fg-color: #151515;
-  --md-primary-bg-color: #e9e4d8;
+  --md-default-fg-color--light: #b0aa9b !important;
+  --md-default-fg-color--lighter: #6e6a5e !important;
+  --md-primary-fg-color: #151515 !important;
+  --md-primary-bg-color: #e9e4d8 !important;
 
   --admonition-bg: #27241f;
   --admonition-border: #3a352c;
   --highlight-bg: #6b5c37;
   --link-color: #d6c48f;
   --link-color-hover: #e6d7ab;
-  --md-typeset-a-color: var(--link-color);
-  --md-accent-fg-color: var(--link-color-hover);
-  --md-accent-fg-color--transparent: rgba(214, 196, 143, 0.1);
-  --md-accent-bg-color: #1c1a17;
-  --md-accent-bg-color--light: #1c1a17;
+  --md-typeset-a-color: var(--link-color) !important;
+  --md-accent-fg-color: var(--link-color-hover) !important;
+  --md-accent-fg-color--transparent: rgba(214, 196, 143, 0.1) !important;
+  --md-accent-bg-color: #1c1a17 !important;
+  --md-accent-bg-color--light: #1c1a17 !important;
   --highlight-fg: #f5efe0;
 }
 

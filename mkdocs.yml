@@ -9,16 +9,18 @@ repo_name: phylosophie
 theme:
   name: material
   language: ru
+  # Без primary/accent — все цвета задаём сами через CSS-переменные
+  # в stylesheets/extra.css. Названные палитры Material (primary: ...)
+  # генерируют свой [data-md-color-primary=...] блок в palette.css,
+  # который перебивает наши переменные с той же специфичностью.
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
       toggle:
         icon: material/brightness-7
         name: Переключить на тёмную тему
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
       toggle:
         icon: material/brightness-4
         name: Переключить на светлую тему

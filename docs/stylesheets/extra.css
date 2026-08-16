@@ -5,11 +5,12 @@
 --------------------------------------------------------- */
 
 :root {
-  --md-default-bg-color: #faf7f2;
+  /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
+  --md-default-bg-color: #f9f9f7;
   --md-default-fg-color: #2b2926;
   --md-default-fg-color--light: #6b665e;
   --md-default-fg-color--lighter: #a39d92;
-  --md-primary-fg-color: #faf7f2;
+  --md-primary-fg-color: #f9f9f7;
   --md-primary-bg-color: #2b2926;
 
   --admonition-bg: #f2ede2;
@@ -28,11 +29,12 @@
 /* ---- тёмная тема: те же роли, тёплая тёмная палитра ---- */
 
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #1c1a17;
+  /* фон — как в тёмной теме Клода: hsl(0, 0%, 8.24%) */
+  --md-default-bg-color: #151515;
   --md-default-fg-color: #e9e4d8;
   --md-default-fg-color--light: #b0aa9b;
   --md-default-fg-color--lighter: #6e6a5e;
-  --md-primary-fg-color: #1c1a17;
+  --md-primary-fg-color: #151515;
   --md-primary-bg-color: #e9e4d8;
 
   --admonition-bg: #27241f;

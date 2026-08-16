@@ -33,7 +33,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   font:
-    text: Lora
+    text: PT Serif
     code: JetBrains Mono
 
 extra_css:

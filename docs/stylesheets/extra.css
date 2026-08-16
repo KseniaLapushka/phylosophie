@@ -6,8 +6,8 @@
 
 :root {
   /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
-  --md-default-bg-color: #faf9f5;
-  --md-default-fg-color: #141413;
+  --md-default-bg-color: #faf9f5 !important;
+  --md-default-fg-color: #141413 !important;
   --md-default-fg-color--light: #6b665e;
   --md-default-fg-color--lighter: #a39d92;
   --md-primary-fg-color: #faf9f5;
@@ -30,8 +30,8 @@
 
 [data-md-color-scheme="slate"] {
   /* фон — как в тёмной теме Клода: hsl(0, 0%, 8.24%) */
-  --md-default-bg-color: #151515;
-  --md-default-fg-color: #e9e4d8;
+  --md-default-bg-color: #151515 !important;
+  --md-default-fg-color: #e9e4d8 !important;
   --md-default-fg-color--light: #b0aa9b;
   --md-default-fg-color--lighter: #6e6a5e;
   --md-primary-fg-color: #151515;
@@ -162,6 +162,15 @@ body {
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--md-default-fg-color) !important;
 }
 
 /* ---- убираем значок ¶ у заголовков при наведении ---- */

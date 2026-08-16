@@ -1,3 +1,9 @@
+---
+title: Занятие 1. Познание и путь к истине. Что значит знать?
+---
+
+[← Истина](index.md){: .back-link }
+
 # Занятие 1. Познание и путь к истине. Что значит знать?
 
 ## Кратко
@@ -242,24 +248,73 @@
 
 !!! example "Что сделать к следующему занятию"
 
-    1. Дайте своё краткое толкование даосской притчи о Чжуан Чжоу и
-       мотыльке.
-    2. Предложите свой перевод на русский язык одного из англоязычных
-       определений эпистемологии из конспекта. Обратите внимание на
-       значение терминов (*knowledge, reason, judgement, sensation,
-       justification*) и на то, чем обоснована ваша версия перевода.
-    3. Кратко ответьте на вопросы:
-        - [ ] Что такое эпистемология?
-        - [ ] Какие существуют синонимы понятия «эпистемология»?
-        - [ ] Что такое «теория интеллекта» и в чём она состоит?
-        - [ ] Сформулируйте главные вопросы эпистемологии.
-        - [ ] Что значит знать?
-        - [ ] Опишите формальную структуру знания. Дайте объяснение
-          каждому термину.
-        - [ ] Что такое методологический натурализм?
-        - [ ] Что такое онтологический натурализм?
-        - [ ] Какие есть аргументы в пользу натурализации эпистемологии?
-        - [ ] Какие есть аргументы против натурализации эпистемологии?
+    <div class="hw-item" data-key="q1" markdown="1">
+    1\. Дайте своё краткое толкование даосской притчи о Чжуан Чжоу и мотыльке.
+    <textarea class="answer-box" data-key="q1" placeholder="Твой ответ..."></textarea>
+    <span class="save-status"></span>
+    </div>
+
+    <div class="hw-item" data-key="q2" markdown="1">
+    2\. Предложите свой перевод на русский язык одного из англоязычных
+    определений эпистемологии из конспекта. Обратите внимание на значение
+    терминов (*knowledge, reason, judgement, sensation, justification*) и
+    на то, чем обоснована ваша версия перевода.
+    <textarea class="answer-box" data-key="q2" placeholder="Твой ответ..."></textarea>
+    <span class="save-status"></span>
+    </div>
+
+    3\. Кратко ответьте на вопросы:
+
+    <div class="hw-item" data-key="q3-1">
+      <label class="hw-check"><input type="checkbox"> Что такое эпистемология?</label>
+      <textarea class="answer-box" data-key="q3-1" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-2">
+      <label class="hw-check"><input type="checkbox"> Какие существуют синонимы понятия «эпистемология»?</label>
+      <textarea class="answer-box" data-key="q3-2" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-3">
+      <label class="hw-check"><input type="checkbox"> Что такое «теория интеллекта» и в чём она состоит?</label>
+      <textarea class="answer-box" data-key="q3-3" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-4">
+      <label class="hw-check"><input type="checkbox"> Сформулируйте главные вопросы эпистемологии.</label>
+      <textarea class="answer-box" data-key="q3-4" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-5">
+      <label class="hw-check"><input type="checkbox"> Что значит знать?</label>
+      <textarea class="answer-box" data-key="q3-5" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-6">
+      <label class="hw-check"><input type="checkbox"> Опишите формальную структуру знания. Дайте объяснение каждому термину.</label>
+      <textarea class="answer-box" data-key="q3-6" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-7">
+      <label class="hw-check"><input type="checkbox"> Что такое методологический натурализм?</label>
+      <textarea class="answer-box" data-key="q3-7" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-8">
+      <label class="hw-check"><input type="checkbox"> Что такое онтологический натурализм?</label>
+      <textarea class="answer-box" data-key="q3-8" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-9">
+      <label class="hw-check"><input type="checkbox"> Какие есть аргументы в пользу натурализации эпистемологии?</label>
+      <textarea class="answer-box" data-key="q3-9" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
+    <div class="hw-item" data-key="q3-10">
+      <label class="hw-check"><input type="checkbox"> Какие есть аргументы против натурализации эпистемологии?</label>
+      <textarea class="answer-box" data-key="q3-10" placeholder="Твой ответ..."></textarea>
+      <span class="save-status"></span>
+    </div>
 
 ## Вопросы / что осталось непонятным
 

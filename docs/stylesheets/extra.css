@@ -9,14 +9,58 @@
   --md-default-fg-color: #2b2926;
   --md-default-fg-color--light: #6b665e;
   --md-default-fg-color--lighter: #a39d92;
-  --md-typeset-a-color: #2b2926;
   --md-primary-fg-color: #faf7f2;
   --md-primary-bg-color: #2b2926;
+
+  --admonition-bg: #f2ede2;
+  --admonition-border: #ded7c9;
+  --highlight-bg: #e9e2d0;
+  --highlight-fg: inherit;
+  --link-color: #8f7c4d;
+  --md-typeset-a-color: var(--link-color);
+}
+
+/* ---- тёмная тема: те же роли, тёплая тёмная палитра ---- */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1c1a17;
+  --md-default-fg-color: #e9e4d8;
+  --md-default-fg-color--light: #b0aa9b;
+  --md-default-fg-color--lighter: #6e6a5e;
+  --md-primary-fg-color: #1c1a17;
+  --md-primary-bg-color: #e9e4d8;
+
+  --admonition-bg: #27241f;
+  --admonition-border: #3a352c;
+  --highlight-bg: #6b5c37;
+  --link-color: #d6c48f;
+  --md-typeset-a-color: var(--link-color);
+  --highlight-fg: #f5efe0;
 }
 
 body,
 .md-typeset {
   color: var(--md-default-fg-color);
+}
+
+/* ---- нейтральный светло-серый скроллбар вместо синего ---- */
+
+* {
+  scrollbar-color: var(--md-default-fg-color--lighter) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--md-default-fg-color--lighter);
+  border-radius: 6px;
 }
 
 /* ---- убираем "хром": шапку, вкладки, лишние кнопки ---- */
@@ -93,6 +137,20 @@ body,
   display: none;
 }
 
+/* ---- ссылка "← Назад" в начале страницы ---- */
+
+.md-typeset a.back-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset a.back-link:hover {
+  color: var(--md-default-fg-color);
+}
+
 /* ---- оглавление-слева: тихие серые пункты, активный —
        тёмный и жирный (подсветку активного добавляет сам
        Material через toc.follow, тут только цвета) ---- */
@@ -117,13 +175,13 @@ body,
 
 .md-typeset .admonition,
 .md-typeset details {
-  border-color: #ded7c9 !important;
-  background: #f2ede2;
+  border-color: var(--admonition-border) !important;
+  background: var(--admonition-bg);
 }
 
 .md-typeset .admonition-title,
 .md-typeset summary {
-  background: #ece5d6 !important;
+  background: var(--admonition-bg) !important;
 }
 
 .md-typeset .admonition-title::before,
@@ -134,30 +192,91 @@ body,
   color: var(--md-default-fg-color--light) !important;
 }
 
-/* ---- акцент для "Домашнее задание" (тип example) ---- */
+/* ---- акцент для "Домашнее задание" (тип example): просто заливка,
+       тем же цветом, что и подсветка ==текста==, без рамки ---- */
 
 .md-typeset .admonition.example {
-  border: 2px solid #2b2926 !important;
-  background: #fff;
+  border: none !important;
+  background: var(--highlight-bg);
 }
 
 .md-typeset .example > .admonition-title {
-  background: #2b2926 !important;
+  background: var(--highlight-bg) !important;
+  color: var(--highlight-fg);
 }
 
 .md-typeset .example > .admonition-title::before {
-  background-color: #faf7f2 !important;
+  background-color: var(--highlight-fg) !important;
+  opacity: 0.7;
 }
 
-.md-typeset .example > .admonition-title {
-  color: #faf7f2;
+/* ---- галочка отмеченного чекбокса — тёмная, не зелёная ---- */
+
+.md-typeset .task-list-control .task-list-indicator::before {
+  background-color: var(--md-default-fg-color) !important;
+}
+
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--md-default-fg-color) !important;
+}
+
+/* ---- домашнее задание: пункты с полем для ответа ---- */
+
+.md-typeset .hw-item {
+  margin: 1.25rem 0;
+}
+
+.md-typeset .hw-item p {
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .hw-check {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .hw-check input {
+  margin: 0;
+  accent-color: var(--md-default-fg-color);
+}
+
+.md-typeset .answer-box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 2.4rem;
+  resize: vertical;
+  border: 1px solid var(--admonition-border);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: inherit;
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0.5rem 0.6rem;
+}
+
+.md-typeset .answer-box:focus {
+  outline: none;
+  border-color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .save-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--lighter);
+  margin-top: 0.2rem;
+  height: 1em;
 }
 
 /* ---- подсветка ключевых фраз ==текст== ---- */
 
 .md-typeset mark {
-  background-color: #e9e2d0;
-  color: inherit;
+  background-color: var(--highlight-bg);
+  color: var(--highlight-fg);
   padding: 0.05em 0.15em;
   border-radius: 2px;
 }
@@ -165,7 +284,8 @@ body,
 /* ---- ссылки в тексте: тихие, с подчёркиванием ---- */
 
 .md-typeset a {
+  color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 2px;
-  text-decoration-color: var(--md-default-fg-color--lighter);
+  text-decoration-color: var(--link-color);
 }

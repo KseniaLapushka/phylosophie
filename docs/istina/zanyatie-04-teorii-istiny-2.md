@@ -136,3 +136,5 @@ title: Занятие 4. Теории истины — II (прагматист�
 
 - [← Занятие 3](zanyatie-03-teorii-istiny-1.md)
 - [Занятие 5 →](zanyatie-05-istina-i-obosnovanie.md)
+
+--8<-- "copyright.md"

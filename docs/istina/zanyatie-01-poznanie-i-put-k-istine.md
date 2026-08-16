@@ -323,3 +323,5 @@ title: Занятие 1. Познание и путь к истине. Что з
 ## Связанные конспекты
 
 - [Занятие 2 →](zanyatie-02-istochniki-poznaniya.md)
+
+--8<-- "copyright.md"

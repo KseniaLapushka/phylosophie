@@ -55,6 +55,8 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
   - pymdownx.mark
+  - pymdownx.snippets:
+      base_path: ["snippets"]
   - tables
 
 plugins:

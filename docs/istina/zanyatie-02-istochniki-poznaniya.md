@@ -290,3 +290,5 @@ reason*) — с его помощью мы формируем суждения, 
 
 - [← Занятие 1](zanyatie-01-poznanie-i-put-k-istine.md)
 - [Занятие 3 →](zanyatie-03-teorii-istiny-1.md)
+
+--8<-- "copyright.md"

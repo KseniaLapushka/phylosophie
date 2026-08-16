@@ -150,3 +150,5 @@ title: Занятие 3. Теории истины — I (классическа
 
 - [← Занятие 2](zanyatie-02-istochniki-poznaniya.md)
 - [Занятие 4 →](zanyatie-04-teorii-istiny-2.md)
+
+--8<-- "copyright.md"

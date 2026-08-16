@@ -128,6 +128,15 @@ body,
   color: var(--md-default-fg-color--light) !important;
 }
 
+/* ---- подсветка ключевых фраз ==текст== ---- */
+
+.md-typeset mark {
+  background-color: #f3d675;
+  color: inherit;
+  padding: 0.05em 0.15em;
+  border-radius: 2px;
+}
+
 /* ---- ссылки в тексте: тихие, с подчёркиванием ---- */
 
 .md-typeset a {

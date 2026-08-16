@@ -77,14 +77,20 @@ body,
 
 .md-content__inner {
   padding-top: 2rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.75;
 }
 
 .md-content__inner h1 {
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
+}
+
+/* ---- убираем значок ¶ у заголовков при наведении ---- */
+
+.md-typeset .headerlink {
+  display: none;
 }
 
 /* ---- оглавление-слева: тихие серые пункты, активный —
@@ -128,10 +134,29 @@ body,
   color: var(--md-default-fg-color--light) !important;
 }
 
+/* ---- акцент для "Домашнее задание" (тип example) ---- */
+
+.md-typeset .admonition.example {
+  border: 2px solid #2b2926 !important;
+  background: #fff;
+}
+
+.md-typeset .example > .admonition-title {
+  background: #2b2926 !important;
+}
+
+.md-typeset .example > .admonition-title::before {
+  background-color: #faf7f2 !important;
+}
+
+.md-typeset .example > .admonition-title {
+  color: #faf7f2;
+}
+
 /* ---- подсветка ключевых фраз ==текст== ---- */
 
 .md-typeset mark {
-  background-color: #f3d675;
+  background-color: #e9e2d0;
   color: inherit;
   padding: 0.05em 0.15em;
   border-radius: 2px;

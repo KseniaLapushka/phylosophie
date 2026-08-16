@@ -44,12 +44,13 @@ markdown_extensions:
   - attr_list
   - footnotes
   - toc:
-      permalink: true
+      permalink: false
       title: На этой странице
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.mark
   - tables
 

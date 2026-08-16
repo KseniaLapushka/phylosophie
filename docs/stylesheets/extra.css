@@ -6,12 +6,12 @@
 
 :root {
   /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
-  --md-default-bg-color: #f9f9f7;
-  --md-default-fg-color: #2b2926;
+  --md-default-bg-color: #faf9f5;
+  --md-default-fg-color: #141413;
   --md-default-fg-color--light: #6b665e;
   --md-default-fg-color--lighter: #a39d92;
-  --md-primary-fg-color: #f9f9f7;
-  --md-primary-bg-color: #2b2926;
+  --md-primary-fg-color: #faf9f5;
+  --md-primary-bg-color: #141413;
 
   --admonition-bg: #f2ede2;
   --admonition-border: #ded7c9;
@@ -22,8 +22,8 @@
   --md-typeset-a-color: var(--link-color);
   --md-accent-fg-color: var(--link-color-hover);
   --md-accent-fg-color--transparent: rgba(143, 124, 77, 0.1);
-  --md-accent-bg-color: #2b2926;
-  --md-accent-bg-color--light: #2b2926;
+  --md-accent-bg-color: #141413;
+  --md-accent-bg-color--light: #141413;
 }
 
 /* ---- тёмная тема: те же роли, тёплая тёмная палитра ---- */
@@ -53,6 +53,10 @@
 body,
 .md-typeset {
   color: var(--md-default-fg-color);
+}
+
+body {
+  background-color: var(--md-default-bg-color) !important;
 }
 
 /* ---- нейтральный светло-серый скроллбар вместо синего ---- */

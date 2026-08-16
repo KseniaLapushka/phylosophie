@@ -1,0 +1,59 @@
+site_name: Конспекты по философии
+site_description: Личные конспекты лекций — чтобы в любой момент открыть и вспомнить, что проходили
+site_author: Ksu Solovey
+
+# TODO: замени <username> на свой GitHub-логин перед первым деплоем —
+# от этого зависят корректные ссылки и sitemap.
+site_url: https://<username>.github.io/phylosophie/
+repo_url: https://github.com/<username>/phylosophie
+repo_name: phylosophie
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+      title: На этой странице
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+
+plugins:
+  - search:
+      lang: ru
+
+# nav можно не задавать вообще — MkDocs сам построит меню
+# из структуры папок и файлов внутри docs/. Просто добавляй
+# новые .md файлы в нужный курс — они появятся в навигации сами.

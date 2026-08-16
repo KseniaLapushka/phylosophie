@@ -3,7 +3,7 @@
 Личный сайт с конспектами лекций на [MkDocs Material](https://squidfunk.github.io/mkdocs-material/),
 опубликованный бесплатно через GitHub Pages.
 
-Сайт: `https://<username>.github.io/phylosophie/` *(замени `<username>` на свой GitHub-логин)*
+Сайт: [`https://KseniaLapushka.github.io/phylosophie/`](https://KseniaLapushka.github.io/phylosophie/)
 
 ## Структура
 

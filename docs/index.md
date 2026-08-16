@@ -17,4 +17,4 @@
 3. Локально проверь: `mkdocs serve` — сайт откроется на `http://127.0.0.1:8000`.
 4. Закоммить и запушь в `main` — сайт обновится сам через пару минут (см. Actions).
 
-Подробности — в [README проекта](https://github.com/<username>/phylosophie#readme).
+Подробности — в [README проекта](https://github.com/KseniaLapushka/phylosophie#readme).

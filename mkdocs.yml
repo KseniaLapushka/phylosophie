@@ -2,10 +2,8 @@ site_name: Конспекты по философии
 site_description: Личные конспекты лекций — чтобы в любой момент открыть и вспомнить, что проходили
 site_author: Ksu Solovey
 
-# TODO: замени <username> на свой GitHub-логин перед первым деплоем —
-# от этого зависят корректные ссылки и sitemap.
-site_url: https://<username>.github.io/phylosophie/
-repo_url: https://github.com/<username>/phylosophie
+site_url: https://KseniaLapushka.github.io/phylosophie/
+repo_url: https://github.com/KseniaLapushka/phylosophie
 repo_name: phylosophie
 
 theme:

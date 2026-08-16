@@ -4,7 +4,8 @@
    (подсветка активного раздела уже встроена в Material).
 --------------------------------------------------------- */
 
-:root {
+:root,
+[data-md-color-scheme="default"] {
   /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
   --md-default-bg-color: #faf9f5 !important;
   --md-default-fg-color: #141413 !important;

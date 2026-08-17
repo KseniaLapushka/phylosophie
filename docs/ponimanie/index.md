@@ -14,3 +14,5 @@ title: Понимание
 ## Занятия
 
 1. [Занятие 1 — Что значит понимать? Герменевтика и искусство интерпретации](zanyatie-01-chto-znachit-ponimat.md)
+2. [Занятие 2 — Священные тексты, литература и искусство](zanyatie-02-svyaschennye-teksty-i-iskusstvo.md)
+3. [Занятие 3 — Понимание смыслов и понимание бытия](zanyatie-03-ponimanie-i-yazyk.md)

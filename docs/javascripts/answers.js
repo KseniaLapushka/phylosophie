@@ -40,11 +40,27 @@ function initAnswerFields() {
   });
 }
 
+// Заголовок "Конспекты по философии" в шапке должен вести на главную —
+// мы прячем стандартный логотип Material (.md-logo), но у него уже есть
+// правильная ссылка на корень сайта. Просто переносим клик на заголовок.
+function initTitleLink() {
+  var title = document.querySelector(".md-header__title");
+  var logo = document.querySelector(".md-header__button.md-logo");
+  if (!title || !logo || title.dataset.linked) return;
+  title.dataset.linked = "1";
+  title.style.cursor = "pointer";
+  title.addEventListener("click", function () {
+    window.location.href = logo.getAttribute("href");
+  });
+}
+
 // Material использует "instant navigation" (переход между страницами без
 // полной перезагрузки) — document$ это специальный поток Material,
 // который срабатывает при каждом переходе, а не только при первой загрузке.
 if (window.document$) {
   document$.subscribe(initAnswerFields);
+  document$.subscribe(initTitleLink);
 } else {
   document.addEventListener("DOMContentLoaded", initAnswerFields);
+  document.addEventListener("DOMContentLoaded", initTitleLink);
 }

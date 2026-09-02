@@ -117,6 +117,17 @@ body {
   color: var(--md-default-fg-color--lighter) !important;
 }
 
+/* ---- убираем серую заливку строки поиска ---- */
+
+.md-search__form {
+  background-color: transparent !important;
+  border: 1px solid var(--admonition-border);
+}
+
+.md-search__form:hover {
+  background-color: transparent !important;
+}
+
 .md-tabs {
   display: none;
 }

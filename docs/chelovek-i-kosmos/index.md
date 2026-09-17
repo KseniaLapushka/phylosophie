@@ -19,3 +19,7 @@ title: Человек и Космос
 2. [Занятие 2 — Основные формы человеческого бытия](zanyatie-02-osnovnye-formy-chelovecheskogo-bytiya.md)
 3. [Занятие 3 — Рождение философской антропологии. Макс Шелер, Гельмут Плесснер, Арнольд Гелен](zanyatie-03-rozhdenie-filosofskoy-antropologii.md)
 4. [Занятие 4 — Предназначение человека](zanyatie-04-prednaznachenie-cheloveka.md)
+
+## Мини-курс внутри курса
+
+- [История античной философии-I](istoriya-antichnoy-filosofii/index.md) — практикум-лекторий: досократики и Платон (5 занятий)

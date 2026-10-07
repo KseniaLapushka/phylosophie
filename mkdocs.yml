@@ -9,6 +9,9 @@ repo_name: phylosophie
 theme:
   name: material
   language: ru
+  # Круг с буквой «Ф» (генерируется tools/make_favicon.py). Круг залит сам,
+  # поэтому читается и на светлой, и на тёмной панели вкладок.
+  favicon: assets/favicon.png
   # Без primary/accent — все цвета задаём сами через CSS-переменные
   # в stylesheets/extra.css. Названные палитры Material (primary: ...)
   # генерируют свой [data-md-color-primary=...] блок в palette.css,

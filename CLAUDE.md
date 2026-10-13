@@ -33,8 +33,9 @@ GitHub Actions (`.github/workflows/deploy.yml`) при каждом пуше.
    Пользователь иногда кладёт новые PDF прямо в `docs/` — проверять
    `find docs -name '*.pdf'` и **переносить в `_inbox/`**: всё из `docs/`
    публикуется на сайте.
-2. Извлекать текст через `pypdf` (`pip install pypdf` в `.venv`),
-   постранично, во временный файл. Встроенное чтение PDF инструментом
+2. Извлекать текст через `pypdf` (`.venv/bin/pip install -r
+   requirements-tools.txt`; там же Pillow для `tools/make_favicon.py`;
+   CI ставит только `requirements.txt`), постранично, во временный файл. Встроенное чтение PDF инструментом
    Read может отдать «media removed» без текста.
 3. Структура: `docs/<slug>/index.md` + `zanyatie-NN-<тема>.md`
    (латиница в именах файлов). Каждый файл начинается с frontmatter
@@ -113,3 +114,5 @@ GitHub Actions (`.github/workflows/deploy.yml`) при каждом пуше.
 `chelovek-i-kosmos` (4 + мини-курс `istoriya-antichnoy-filosofii`, 5),
 `blago` (4 + `moralnye-dilemmy`), `transformatsiya` (занятия 1 и 3).
 Открыто: конспект занятия 2 практикума «Трансформация».
+Фавиконка — `docs/assets/favicon.png` (круг с «Ф»), генерируется
+`tools/make_favicon.py`; цвета — две константы в начале скрипта.

@@ -18,3 +18,4 @@ title: История философии
 - [История средневековой философии-II. Зрелое Средневековье. Схоластика и мистика](srednevekovaya-2/index.md) (к курсу [«Красота»](../krasota/index.md))
 - [История философии Нового времени-I](novoe-vremya-1/index.md) (к курсу [«Смысл истории»](../smysl-istorii/index.md))
 - [История философии Нового времени-II](novoe-vremya-2/index.md) (к курсу [«Общества и элиты»](../obshchestva-i-elity/index.md))
+- [История философии XIX века](xix-vek/index.md) (к курсу [«Моё призвание и архитектура эпохи»](../prizvanie/index.md))

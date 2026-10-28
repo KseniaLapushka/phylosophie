@@ -670,6 +670,6 @@ creatum*).
 ## Связанные конспекты
 
 - [← Занятие 1](zanyatie-01-chto-takoe-sholastika.md)
-- [Занятие 3 →](zanyatie-03.md)
+- [Занятие 3 →](zanyatie-03-dominikantsy-i-frantsiskantsy.md)
 
 --8<-- "copyright.md"

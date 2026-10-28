@@ -111,8 +111,20 @@ GitHub Actions (`.github/workflows/deploy.yml`) при каждом пуше.
 ## Текущее состояние
 
 Курсы на сайте: `istina` (5), `ponimanie` (3), `miroporyadki` (3),
-`chelovek-i-kosmos` (4 + мини-курс `istoriya-antichnoy-filosofii`, 5),
-`blago` (4 + `moralnye-dilemmy`), `transformatsiya` (занятия 1 и 3).
-Открыто: конспект занятия 2 практикума «Трансформация».
+`chelovek-i-kosmos` (4), `blago` (4 + `moralnye-dilemmy`),
+`transformatsiya` (занятия 1 и 3), `spravedlivost` (+ практикум
+`argumentatsiya`), `soznanie`, `religiya`, `krasota`, `smysl-istorii`,
+`obshchestva-i-elity`, `prizvanie` (занятия 1, 2, 4),
+`kak-pisat-issledovanie` (занятия 2, 3).
+
+Практикумы по истории философии собраны в один раздел
+`docs/istoriya-filosofii/` (подпапки `antichnaya-1`, `antichnaya-2`,
+`srednevekovaya-1/2`, `novoe-vremya-1/2`, `xix-vek`); у каждого в index
+указан курс, к которому он шёл, а у курса — раздел «Практикум к курсу».
+В vault — папка «История философии» с индексной заметкой; «Античная I»
+там осталась в папке «Человек и Космос» (не переносить — правило vault).
+
+Открыто: нет материалов занятия 2 «Трансформации», занятия 3
+«Призвания», занятия 1 «Как писать исследование».
 Фавиконка — `docs/assets/favicon.png` (круг с «Ф»), генерируется
 `tools/make_favicon.py`; цвета — две константы в начале скрипта.

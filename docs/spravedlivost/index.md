@@ -17,3 +17,7 @@ XXI веке.
 2. [Занятие 2 — Легитимация политической деятельности](zanyatie-02-legitimatsiya.md)
 3. [Занятие 3 — Свобода и справедливость](zanyatie-03-svoboda-i-spravedlivost.md)
 4. [Занятие 4 — Трансформация политики и политических практик в XXI веке](zanyatie-04-transformatsiya-politiki.md)
+
+## Практикум к курсу
+
+- [Как быть убедительным? Практикум по аргументации](../argumentatsiya/index.md)

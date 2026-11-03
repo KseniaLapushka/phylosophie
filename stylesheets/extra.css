@@ -1,0 +1,351 @@
+/* ---------------------------------------------------------
+   "Читальный" минималистичный вид, вдохновлённый benji.org:
+   узкая колонка текста по центру, слева — оглавление главы
+   (подсветка активного раздела уже встроена в Material).
+--------------------------------------------------------- */
+
+:root,
+[data-md-color-scheme="default"] {
+  /* фон — как в светлой теме Клода: hsl(60, 14.29%, 97.25%) */
+  --md-default-bg-color: #faf9f5 !important;
+  --md-default-fg-color: #141413 !important;
+  --md-default-fg-color--light: #6b665e !important;
+  --md-default-fg-color--lighter: #a39d92 !important;
+  --md-primary-fg-color: #faf9f5 !important;
+  --md-primary-bg-color: #141413 !important;
+
+  --admonition-bg: #f2ede2;
+  --admonition-border: #ded7c9;
+  --highlight-bg: #e9e2d0;
+  --highlight-fg: inherit;
+  --link-color: #8f7c4d;
+  --link-color-hover: #ad9868;
+  --md-typeset-a-color: var(--link-color) !important;
+  --md-accent-fg-color: var(--link-color-hover) !important;
+  --md-accent-fg-color--transparent: rgba(143, 124, 77, 0.1) !important;
+  --md-accent-bg-color: #141413 !important;
+  --md-accent-bg-color--light: #141413 !important;
+}
+
+/* ---- тёмная тема: те же роли, тёплая тёмная палитра ---- */
+
+[data-md-color-scheme="slate"] {
+  /* фон — как в тёмной теме Клода: hsl(0, 0%, 8.24%) */
+  --md-default-bg-color: #151515 !important;
+  --md-default-fg-color: #e9e4d8 !important;
+  --md-default-fg-color--light: #b0aa9b !important;
+  --md-default-fg-color--lighter: #6e6a5e !important;
+  --md-primary-fg-color: #151515 !important;
+  --md-primary-bg-color: #e9e4d8 !important;
+
+  --admonition-bg: #27241f;
+  --admonition-border: #3a352c;
+  --highlight-bg: #6b5c37;
+  --link-color: #d6c48f;
+  --link-color-hover: #e6d7ab;
+  --md-typeset-a-color: var(--link-color) !important;
+  --md-accent-fg-color: var(--link-color-hover) !important;
+  --md-accent-fg-color--transparent: rgba(214, 196, 143, 0.1) !important;
+  --md-accent-bg-color: #1c1a17 !important;
+  --md-accent-bg-color--light: #1c1a17 !important;
+  --highlight-fg: #f5efe0;
+}
+
+body,
+.md-typeset {
+  color: var(--md-default-fg-color);
+}
+
+body {
+  background-color: var(--md-default-bg-color) !important;
+}
+
+/* ---- нейтральный светло-серый скроллбар вместо синего ---- */
+
+* {
+  scrollbar-color: var(--md-default-fg-color--lighter) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+}
+
+/* ---- убираем "хром": шапку, вкладки, лишние кнопки ---- */
+
+.md-header {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: var(--md-default-fg-color) !important;
+  box-shadow: none !important;
+}
+
+.md-header__button.md-logo,
+.md-header__button[for="__drawer"],
+.md-header__source {
+  display: none;
+}
+
+.md-header__title {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  /* выравниваем с пунктами левого меню (оглавления главы) */
+  margin-left: 12px !important;
+  padding-left: 0;
+}
+
+.md-header__button,
+.md-header .md-icon svg {
+  color: var(--md-default-fg-color) !important;
+  fill: var(--md-default-fg-color) !important;
+}
+
+.md-search__input {
+  color: var(--md-default-fg-color) !important;
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--lighter) !important;
+}
+
+/* ---- убираем серую заливку строки поиска ---- */
+
+.md-search__form {
+  background-color: transparent !important;
+  border: 1px solid var(--admonition-border);
+}
+
+.md-search__form:hover {
+  background-color: transparent !important;
+}
+
+.md-tabs {
+  display: none;
+}
+
+.md-header,
+.md-tabs {
+  position: static;
+}
+
+.md-main__inner {
+  margin-top: 0;
+}
+
+/* ---- прячем глобальное меню курсов слева, вместо него
+       используем оглавление страницы (главы конспекта) ---- */
+
+.md-sidebar--primary {
+  display: none;
+}
+
+.md-sidebar--secondary {
+  order: -1;
+  left: 0;
+}
+
+/* ---- узкая колонка текста по центру ---- */
+
+.md-grid {
+  max-width: 1180px;
+}
+
+.md-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.md-content__inner {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.md-content__inner h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--md-default-fg-color) !important;
+}
+
+/* ---- убираем значок ¶ у заголовков при наведении ---- */
+
+.md-typeset .headerlink {
+  display: none;
+}
+
+/* ---- ссылка "← Назад" в начале страницы ---- */
+
+.md-typeset a.back-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset a.back-link:hover {
+  color: var(--md-default-fg-color);
+}
+
+/* ---- оглавление-слева: тихие серые пункты, активный —
+       тёмный и жирный (подсветку активного добавляет сам
+       Material через toc.follow, тут только цвета) ---- */
+
+.md-nav--secondary .md-nav__title {
+  display: none;
+}
+
+.md-nav--secondary .md-nav__link {
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+}
+
+.md-nav--secondary .md-nav__link--active,
+.md-nav--secondary .md-nav__link:hover {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+/* ---- приглушённые плашки (admonition) под тёплую палитру ---- */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: var(--admonition-border) !important;
+  background: var(--admonition-bg);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: var(--admonition-bg) !important;
+}
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before,
+.md-typeset .admonition-title::after,
+.md-typeset summary::after {
+  background-color: var(--md-default-fg-color--light) !important;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+/* ---- акцент для "Домашнее задание" (тип example): просто заливка,
+       тем же цветом, что и подсветка ==текста==, без рамки ---- */
+
+.md-typeset .admonition.example {
+  border: none !important;
+  background: var(--highlight-bg);
+}
+
+.md-typeset .example > .admonition-title {
+  background: var(--highlight-bg) !important;
+  color: var(--highlight-fg);
+}
+
+.md-typeset .example > .admonition-title::before {
+  background-color: var(--highlight-fg) !important;
+  opacity: 0.7;
+}
+
+/* ---- галочка отмеченного чекбокса — тёмная, не зелёная ---- */
+
+.md-typeset .task-list-control .task-list-indicator::before {
+  background-color: var(--md-default-fg-color) !important;
+}
+
+.md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--md-default-fg-color) !important;
+}
+
+/* ---- домашнее задание: пункты с полем для ответа ---- */
+
+.md-typeset .hw-item {
+  margin: 1.25rem 0;
+}
+
+.md-typeset .hw-item p {
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .hw-check {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .hw-check input {
+  margin: 0;
+  accent-color: var(--md-default-fg-color);
+}
+
+.md-typeset .answer-box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 2.4rem;
+  resize: vertical;
+  border: 1px solid var(--admonition-border);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: inherit;
+  font-size: 0.9em;
+  line-height: 1.5;
+  padding: 0.5rem 0.6rem;
+}
+
+.md-typeset .answer-box:focus {
+  outline: none;
+  border-color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .save-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--lighter);
+  margin-top: 0.2rem;
+  height: 1em;
+}
+
+/* ---- подсветка ключевых фраз ==текст== ---- */
+
+.md-typeset mark {
+  background-color: var(--highlight-bg);
+  color: var(--highlight-fg);
+  padding: 0.05em 0.15em;
+  border-radius: 2px;
+}
+
+/* ---- ссылки в тексте: тихие, с подчёркиванием ---- */
+
+.md-typeset a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--link-color);
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--link-color-hover) !important;
+  text-decoration-color: var(--link-color-hover) !important;
+}

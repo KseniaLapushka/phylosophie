@@ -110,7 +110,8 @@ GitHub Actions (`.github/workflows/deploy.yml`) при каждом пуше.
 
 ## Текущее состояние
 
-Курсы на сайте: `istina` (5), `ponimanie` (3), `miroporyadki` (3),
+Курсы на сайте: `mirovozzrenie` (5 + «О Школе», «Тексты для чтения»;
+первый курс обучения), `istina` (5), `ponimanie` (3), `miroporyadki` (3),
 `chelovek-i-kosmos` (4), `blago` (4 + `moralnye-dilemmy`),
 `transformatsiya` (занятия 1 и 3), `spravedlivost` (+ практикум
 `argumentatsiya`), `soznanie`, `religiya`, `krasota`, `smysl-istorii`,

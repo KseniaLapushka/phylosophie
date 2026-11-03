@@ -291,5 +291,6 @@ title: "Занятие 2. Условия и последовательность
 - [← Занятие 1](zanyatie-01-chto-takoe-mirovozzrenie.md)
 - [Занятие 3 →](zanyatie-03-mirovozzrenie-i-ideologiya.md)
 - [Тексты для чтения](teksty-dlya-chteniya.md)
+- [Хрестоматия к занятию 2](hrestomatiya-02.md)
 
 --8<-- "copyright.md"

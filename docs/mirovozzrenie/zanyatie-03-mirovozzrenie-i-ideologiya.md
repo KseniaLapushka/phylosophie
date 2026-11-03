@@ -239,5 +239,6 @@ title: "Занятие 3. Мировоззрение vs идеология и п
 - [← Занятие 2](zanyatie-02-yadro-mirovozzreniya.md)
 - [Занятие 4 →](zanyatie-04-put-lichnosti.md)
 - [Тексты для чтения](teksty-dlya-chteniya.md)
+- [Хрестоматия к занятию 3](hrestomatiya-03.md)
 
 --8<-- "copyright.md"

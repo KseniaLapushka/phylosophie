@@ -421,5 +421,6 @@ existentia*). – De trin., IV, 21.
 - [← Занятие 3](zanyatie-03-mirovozzrenie-i-ideologiya.md)
 - [Занятие 5 →](zanyatie-05-esse-moe-mirovozzrenie.md)
 - [Тексты для чтения](teksty-dlya-chteniya.md)
+- [Хрестоматия к занятию 4](hrestomatiya-04.md)
 
 --8<-- "copyright.md"

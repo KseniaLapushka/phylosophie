@@ -106,6 +106,7 @@ title: "Занятие 5. Эссе «Моё мировоззрение». Пра
 
 - [← Занятие 4](zanyatie-04-put-lichnosti.md)
 - [Тексты для чтения](teksty-dlya-chteniya.md)
+- [Хрестоматия к занятию 5](hrestomatiya-05.md)
 - [Практикум «Как писать исследование»](../kak-pisat-issledovanie/index.md)
 
 --8<-- "copyright.md"

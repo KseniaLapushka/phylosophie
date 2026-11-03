@@ -170,6 +170,7 @@ title: Тексты для чтения
 
 ## Связанные конспекты
 
+- Хрестоматия: [к занятию 2](hrestomatiya-02.md), [3](hrestomatiya-03.md), [4](hrestomatiya-04.md), [5](hrestomatiya-05.md)
 - [Занятие 2](zanyatie-02-yadro-mirovozzreniya.md)
 - [Занятие 3](zanyatie-03-mirovozzrenie-i-ideologiya.md)
 - [Занятие 4](zanyatie-04-put-lichnosti.md)
